@@ -3,6 +3,7 @@ A simple way to get Instagram Account Infomations by username as a JSON Response
 
 ## Example
 ```javascript
+const Restra = require("restra")
 async function run() {
     let res = await Restra("instagram")
     console.log(res.graphql.user.edge_followed_by.count.toLocaleString() + " Million") // 347.233.822 Million
